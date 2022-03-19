@@ -170,9 +170,11 @@
                         </div>
                   </div>
                   <div class="room__message">
-                        <form action="#">
+                        <form  method="POST" action="">
+                              {%csrf_token%}
                               <input
-                                    name=""
+                                    type="text"
+                                    name="body"
                                     placeholder="Write your message here..."
                               />
                         </form>
